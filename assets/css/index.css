@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+nav ul {
+   
+    margin-left: 100px;
+    padding-left: 70px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: end;
+
+}
+nav ul li a{
+    list-style-type: none;
+    text-decoration: none;
+}

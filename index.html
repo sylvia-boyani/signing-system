@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Roll call attendance </title>
     <link  rel="stylesheet" type="text/css" href="./assets/css/index.css">
-
+     <link rel="stylesheet" type="text/css" href="./assets/css/utilities.css">
 </head>
 <body>
     <nav>
-        <div>
+        <div classs="dash">
             <ul>
-                <li><a href="#"> student </a></li>
+                <li><a href="#"> Student </a></li>
                 <li><a href="#"> TM sign </a></li>
                 <li><a href="#"> Dashboard </a></li>
                 
@@ -20,9 +20,29 @@
 
         </div>
     </nav>
-    <div> 
+    <div class="dash1"> 
+        <div>
         <h1> Signing In/Out<br> Made Easier </h1>
-        <p> Si</p>
+        <p> Sign with a Single Click </p>
+    </div>
+    <div class="dash2">
+        <form>
+            <input type="text" name="" placeholder="First Name"><br> 
+            <input type="text" name="" placeholder="Last Name"><br>
+            <input type="text" name="" placeholder=" Phone Number"><br>
+            <label for="groups"> Select Group </label>
+            <select name="groups" id="group">
+                <option value="Not applicable"> Not applicable </option>
+                <option value="Access Team"> Access Team </option>
+                <option value="Admission Team "> Admissions team </option>
+                <option value="Marketing Team"> Marketing Team </option>
+                <option value="MPFT/MC 50/51 Hybrid"> MPFT/MC 50/51 Hybrid</option>
+                <option value="MPP25"> MPP25 </option>
+                <option value="DS12"> DS12 </option>
+            </select>
+            
+ </form>
+    </div>
     </div>
     
 </body>
