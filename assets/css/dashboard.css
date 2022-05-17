@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   background-color: #5f0808;
 }
@@ -93,3 +94,20 @@ tr:nth-child(even) {
 .actions button.view {
   background-color: #5f0808;
 }
+=======
+.wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: column;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+.header{
+    height: 100vh;
+    display: flex;
+    justify-content: column;
+    justify-content: space-around;
+    align-items: center; 
+}
+>>>>>>> cbfa7339188aca820b5343b0f4d2b9bc0ebab248
