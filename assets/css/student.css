@@ -1,0 +1,32 @@
+/*#btn{
+    float:inline-end;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    flex-direction: column;
+
+}*/
+
+#btn{
+float: right;
+padding: 10px 25px;
+
+
+
+}
+#form{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#inOut{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
