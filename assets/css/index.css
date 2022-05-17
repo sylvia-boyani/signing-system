@@ -1,0 +1,63 @@
+body{
+    background-image: url("/assets/images/bg-man.jpg");
+    background-size: cover;
+    opacity: 0.9;
+    
+}
+nav .dash{
+    display: flex;
+   justify-content: space-between;
+
+}
+li{
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin: 80px;
+    padding: 1rem;
+    
+}
+nav .dash img{
+    height: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+
+}
+nav .dash ul {
+    display: flex;
+    
+}
+.dash1{
+    display: flex;
+    margin-top: 80px;
+    margin-left: 80px;
+    justify-content: space-between;
+}
+.dash1 .dash2 {
+    margin-right: 350px;
+    }
+    .dash1 .dash2 form input{
+        display: block;
+        margin-top: 10px;
+        font-size: 20px;
+        border: 2px solid black;
+        padding: 10px;
+        
+    }
+    .dash1 .dash2 form label{
+    border: 1px solid;
+    }
+     .group{
+        border: 0px;
+        outline: 0px;
+        background-color: gray;
+    }
+     h1{
+        font-size: 50px;
+        color: white;
+        }
+        p{
+            font-size: 15px;
+            margin-top: 50px;
+            color: white;
+        }
