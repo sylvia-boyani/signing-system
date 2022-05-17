@@ -10,13 +10,22 @@ input{
 @media screen and (min-width: 768px){
 input{
     background-color:silver;
-    margin:20% 35% 0% 35%;
+    margin:10% 35% 0% 35%;
     padding: 1rem;
     color: black;
     border: none;
     border-radius: 6px;
     box-shadow: 2px 2px 5px grey;
     font-size: x-large;
+}
+button{
+    background-color: darkorange;
+    border-radius: 6px;
+    box-shadow: 2px 2px 3px darkorange;
+    border: none;
+    padding:1rem;
+    margin:2rem 3rem;
+}
 
 }
 @media screen and (min-width: 451px) and (max-width: 767px){
