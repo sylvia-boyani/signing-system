@@ -17,4 +17,29 @@ nav .dash img{
 }
 nav .dash ul {
     display: flex;
+    
 }
+.dash1{
+    display: flex;
+    margin-top: 80px;
+    margin-left: 80px;
+    justify-content: space-between;
+}
+.dash1 .dash2 {
+    margin-right: 350px;
+    }
+    .dash1 .dash2 form input{
+        display: block;
+        margin-top: 10px;
+        font-size: 20px;
+        border: 2px solid black;
+        
+    }
+    .dash1 .dash2 form label{
+    border: 1px solid;
+    }
+    .dash1 .dash2  .group{
+        border: 0px;
+        outline: 0px;
+    }
+    
