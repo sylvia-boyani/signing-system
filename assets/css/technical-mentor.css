@@ -1,13 +1,13 @@
 *{
-    
+   background-color: rgb(59, 52, 52); 
 }
-@media screen and (max-width: 450px){
+/*@media screen and (max-width: 450px){
 input{
     display:flex;
     align-items: center;
 }
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px){*/
 input{
     background-color:silver;
     margin:10% 35% 0% 35%;
@@ -24,10 +24,17 @@ button{
     box-shadow: 2px 2px 3px darkorange;
     border: none;
     padding:1rem;
-    margin:2rem 3rem;
+    margin:2rem 4rem;
 }
-
+.option{
+    margin: 5% 0% 0% 30%;
 }
+a{
+    background-color: darkorange;
+    color: black;
+    text-decoration: none;
+}
+/*}
 @media screen and (min-width: 451px) and (max-width: 767px){
 
-}
+}*/
