@@ -7,26 +7,47 @@
 
 }*/
 
-#btn{
-float: right;
-padding: 10px 25px;
+body{
+    height: 100vh;
+    background-image: url(../images/bg-man.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     object-fit: cover;
+     overflow-y: hidden;
+}
+
+btn {
+    border: 1px solid red;
+    margin: 3rem 70rem 3rem 3rem;
+    padding: 1rem;
+    background-color: #ff6900;
 
 
+}
+
+
+#form {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
 
 }
 #form{
     margin-top: 100px;
     display: flex;
     justify-content: center;
-    
 }
 
-#inOut{
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
+button{
+    background-color: #ff6900;
+    margin: 3rem;
+    font-size: x-large;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 5px black;
 }
-
-
 
 
