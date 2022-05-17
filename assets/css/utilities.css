@@ -8,13 +8,13 @@
 /* ****************** Links ****************** */
 a{
     text-decoration: none;
-    color: #fff;
+    color: black;
 }
 
 /* ****************** Buttons ****************** */
 .btn-primary{
     background-color: orange;
-    color: #fff;
+    color:black;
 }
 
 /* ****************** ul ****************** */

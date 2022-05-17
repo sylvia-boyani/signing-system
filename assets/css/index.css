@@ -1,17 +1,20 @@
-body{
-    margin: 0;
-    padding: 0;
-}
-nav ul {
-   
-    margin-left: 100px;
-    padding-left: 70px;
-    margin-top: 50px;
+nav .dash{
     display: flex;
-    flex-direction: end;
+   justify-content: space-between;
 
 }
-nav ul li a{
-    list-style-type: none;
-    text-decoration: none;
+nav .dash ul li{
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin: 80px;
+}
+nav .dash img{
+    height: 150px;
+    margin-top: 50px;
+    margin-left: 30px;
+
+}
+nav .dash ul {
+    display: flex;
 }
