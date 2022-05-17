@@ -1,0 +1,24 @@
+*{
+    
+}
+@media screen and (max-width: 450px){
+input{
+    display:flex;
+    align-items: center;
+}
+}
+@media screen and (min-width: 768px){
+input{
+    background-color:silver;
+    margin:20% 35% 0% 35%;
+    padding: 1rem;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px grey;
+    font-size: x-large;
+
+}
+@media screen and (min-width: 451px) and (max-width: 767px){
+
+}
