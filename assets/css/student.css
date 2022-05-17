@@ -6,6 +6,7 @@
     flex-direction: column;
 
 }*/
+
 body{
     height: 100vh;
     background-image: url(../images/bg-man.jpg);
@@ -33,12 +34,12 @@ btn {
     font-size: xx-large;
 
 }
-
-#inOut {
+#form{
     margin-top: 100px;
     display: flex;
     justify-content: center;
 }
+
 button{
     background-color: #ff6900;
     margin: 3rem;
@@ -48,3 +49,5 @@ button{
     border: none;
     box-shadow: 2px 2px 5px black;
 }
+
+
