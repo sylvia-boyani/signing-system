@@ -31,6 +31,19 @@ a{
     border-radius: 6px;
 }
 
+/* Warning */
+.border-warning{
+    border: 0.1rem solid #FA510F !important;
+}
+
+.border-success{
+    border: 0.2rem solid green !important;
+}
+
+.name-error, .last-name-error{
+    color: #FA510F;
+}
+
 /* ****************** ul ****************** */
 li{
    list-style: none;
