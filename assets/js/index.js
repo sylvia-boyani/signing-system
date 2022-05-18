@@ -12,7 +12,8 @@ const data = [
 const errorMessage = ["Invalid name", "Invalid email", "Invalid serial number"];
 
 const isValidEmailFormat = (email) => {
-  let validEmail = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+  let validEmail = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/; 
+  console.log(validEmail)
   return validEmail.test(email) ? true : false;
 };
 
@@ -27,31 +28,46 @@ const isValidSerialNumberFormat = (serialNumber) => {
 };
 
 inputs.forEach((input) => {
-  let value = input.value;
-  if (input.className.contains("name") && value && isValidNameFormat()) {
-    data[0].firstName = value;
-    input.classList.add("border-success");
-  }
-  else{
-    input.classList.add("border-warning");
-    document.querySelectorAll(".first_name_error").textContent = errorMessage[0];
-  }
+  input.addEventListener("blur", () => {
+    let value = input.value;
+    if (input.classList.contains("name") && value && isValidNameFormat(value)) {
+      data[0].firstName = value;
+      input.classList.add("border-success");
+      document.querySelector(".name-error").textContent = "";
+      document.querySelector(".last-name-error").textContent = "";
+      errorMessage[0];
+    } else {
+      input.classList.add("border-warning");
+      if (input.classList.contains("border-success")) {
+        input.classList.remove("border-success");
+      }
+      document.querySelector(".name-error").textContent = errorMessage[0];
+    }
 
-  if (input.className.contains("email") && value && isValidEmailFormat()) {
-    data[1].firstName = value;
-    input.classList.add("border-success");
-  }
-  else{
-    input.classList.add("border-warning");
-    document.querySelectorAll(".first_name_error").textContent = errorMessage[1];
-  }
+    if (
+      input.classList.contains("email") &&
+      value &&
+      isValidEmailFormat(value)
+    ) {
+      data[0].firstName = value;
+      input.classList.add("border-success");
+      document.querySelector(".email-error").textContent = ""
+    } else {
+      input.classList.add("border-warning");
+      document.querySelector(".email-error").textContent = errorMessage[1];
+    }
 
-  if (input.className.contains("serial") && value && isValidSerialNumberFormat()) {
-    data[2].firstName = value;
-    input.classList.add("border-success");
-  }
-  else{
-    input.classList.add("border-warning");
-    document.querySelectorAll(".first_name_error").textContent = errorMessage[2];
-  }
+    if (
+      input.classList.contains("serial") &&
+      value &&
+      isValidSerialNumberFormat(value)
+    ) {
+      data[0].firstName = value;
+      input.classList.add("border-success");
+    } else {
+      input.classList.add("border-warning");
+      document.querySelectorAll(".first_name_error").textContent =
+        errorMessage[2];
+    }
+  });
 });
