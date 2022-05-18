@@ -23,17 +23,18 @@ button:hover{
         width: 70%;
     }
     button{
-        background-color: darkorange;
+        background-color: #FA510F;
         border-radius: 6px;
-        box-shadow: 2px 2px 3px darkorange;
+        box-shadow: 2px 2px 3px #FA510F;
         border: none;
         padding:0.5rem;
         margin:2rem 0rem 2rem 2rem ;
+        color: white;
     }
     a{
-        background-color: darkorange;
-        color: black;
-        text-decoration: none;
+        background-color: #FA510F;
+        color: white;
+        text-decoration: none; 
     }
     #one{
         margin-left: 1rem;
@@ -59,12 +60,13 @@ input{
     font-size: x-large;
 }
 button{
-    background-color: darkorange;
+    background-color: #FA510F;
     border-radius: 6px;
-    box-shadow: 2px 2px 3px darkorange;
+    box-shadow: 2px 2px 3px #FA510F;
     border: none;
     padding:1rem;
     margin:2rem 0rem 2rem 4rem ;
+    color: white;
 }
 .option{
     margin: 5% 0% 0% 30%;
@@ -72,9 +74,10 @@ button{
     justify-content: center; */
 }
 a{
-    background-color: darkorange;
+    background-color: #FA510F;
     color: black;
     text-decoration: none;
+    color: white;
 }
 #one{
     margin-left: 0rem;
@@ -96,12 +99,13 @@ a{
         font-size: x-large;
     }
     button{
-        background-color: darkorange;
+        background-color: #FA510F;
         border-radius: 6px;
-        box-shadow: 2px 2px 3px darkorange;
+        box-shadow: 2px 2px 3px #FA510F;
         border: none;
         padding:1rem;
         margin:2rem 0rem 2rem 4rem ;
+        color: white;
     }
     .option{
         margin: 5% 0% 0% 20%;
@@ -109,9 +113,10 @@ a{
         justify-content: center; */
     }
     a{
-        background-color: darkorange;
+        background-color: #FA510F;
         color: black;
         text-decoration: none;
+        color: white;
     }
     #one{
         margin-left: 0rem;
