@@ -4,22 +4,22 @@ body{
     opacity: 0.8;
     
 }
+
 nav .dash{
     display: flex;
    justify-content: space-between;
-
+   
 }
 li{
     display: inline-block;
     margin-left: 100px;
-    margin-top: 50px;
     margin: 80px;
-    padding: 1rem;
+    padding: 20px;
     
 }
 nav .dash img{
     height: 100px;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 50px;
 
 }
@@ -29,7 +29,7 @@ nav .dash ul {
 }
 .dash1{
     display: flex;
-    margin-top: 80px;
+    margin-top: 30px;
     margin-left: 80px;
     justify-content: space-between;
 }

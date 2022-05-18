@@ -16,8 +16,8 @@ const errors = [];
 const errorMessage = ["Invalid name", "Invalid email", "Invalid serial number"];
 
 const isValidEmailFormat = (email) => {
-  let validEmail = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/; 
-  console.log(validEmail)
+  let validEmail = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+  console.log(validEmail);
   return validEmail.test(email) ? true : false;
 };
 
@@ -56,7 +56,7 @@ inputs.forEach((input) => {
     ) {
       data[0].firstName = value;
       input.classList.add("border-success");
-      document.querySelector(".email-error").textContent = ""
+      document.querySelector(".email-error").textContent = "";
     } else {
       input.classList.add("border-warning");
       document.querySelector(".email-error").textContent = errorMessage[1];
@@ -70,6 +70,7 @@ inputs.forEach((input) => {
     ) {
       data[0].firstName = value;
       input.classList.add("border-success");
+      document.querySelectorAll(".serial_error").textContent = "";
     } else {
       input.classList.add("border-warning");
       document.querySelectorAll(".serial_error").textContent = errorMessage[2];

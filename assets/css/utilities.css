@@ -17,6 +17,8 @@ a{
     font-size: 20px;
     padding: 10px;
     border-radius: 6px;
+    position: relative;
+    top: -40px;
 }
 
 /* ****************** Buttons ****************** */
