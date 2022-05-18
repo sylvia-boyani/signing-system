@@ -1,28 +1,39 @@
 const inputs = document.querySelectorAll(".input");
 
-const errorMessage = ["Invalid name", "Invalid email", "Invalid serial number"]
+const data = [
+  {
+    firstName: "",
+    lastName: "",
+    email: "",
+    group: "",
+  },
+];
+
+const errorMessage = ["Invalid name", "Invalid email", "Invalid serial number"];
 
 const isValidEmailFormat = (email) => {
   let validEmail = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
   return validEmail.test(email) ? true : false;
 };
 
-
 const isValidNameFormat = (name) => {
-    let validName =  /^[a-z ,.'-]+$/i;
-    return validName.test(name) ? true : false;
-}
+  let validName = /^[a-z ,.'-]+$/i;
+  return validName.test(name) ? true : false;
+};
 
 const isValidSerialNumberFormat = (serialNumber) => {
-    let validSerialNumber =  /^[\\s\\da-zA-Z.-]+$/;
-    return validSerialNumber.test(serialNumber) ? true : false;
-}
+  let validSerialNumber = /^[\\s\\da-zA-Z.-]+$/;
+  return validSerialNumber.test(serialNumber) ? true : false;
+};
 
-
-inputs.forEach(input => {
-    let value = input.value;
-    if(value &&  isValidNameFormat()){
-       input.classList.add("border-success")
-    }
-    
+inputs.forEach((input) => {
+  let value = input.value;
+  if (value && isValidNameFormat()) {
+    data[0].firstName = value;
+    input.classList.add("border-success");
+  }
+  else{
+    input.classList.add("border-warning");
+    document.querySelectorAll(".first_name_error").textContent = errorMessage[0];
+  }
 });
