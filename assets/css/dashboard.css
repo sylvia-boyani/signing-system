@@ -59,6 +59,19 @@ body {
   justify-content: row;
   justify-content: center;
   align-items: center;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+}
+
+.main .left{
+    background-color: aliceblue;
+    height: 100%;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
 }
 
 /* .circle-content{
@@ -67,6 +80,8 @@ body {
 
 table {
   background-color: #fff;
+  border-radius: 0.3rem;
+
 }
 
 td {
