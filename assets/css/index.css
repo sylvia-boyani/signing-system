@@ -1,7 +1,7 @@
 body{
     background-image: url("/assets/images/bg-man.jpg");
     background-size: cover;
-    opacity: 0.9;
+    opacity: 0.8;
     
 }
 nav .dash{
@@ -47,11 +47,8 @@ nav .dash ul {
     .dash1 .dash2 form label{
     border: 1px solid;
     }
-     .group{
-        border: 0px;
-        outline: 0px;
-        background-color: gray;
-    }
+     
+    
      h1{
         font-size: 50px;
         color: white;
@@ -61,3 +58,11 @@ nav .dash ul {
             margin-top: 50px;
             color: white;
         }
+        label{
+            border: 2px solid black;
+            font-size: 20px;
+            padding: 10px;
+            background-color: #c4c4c4;
+
+        }
+
