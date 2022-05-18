@@ -5,7 +5,10 @@ body{
     background-image: url("../images/bg-man.jpg");
     background-size: cover;
     opacity: 0.9;
-
+}
+button:hover{
+    font-size: x-large;
+    background-color: #FA510F;
 }
 @media screen and (max-width: 450px){
     input{
