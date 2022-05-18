@@ -7,6 +7,7 @@
 
 }*/
 body{
+    color: white;
     height: 100vh;
     background-image: url(../images/bg-man.jpg);
      background-repeat: no-repeat;
@@ -14,6 +15,7 @@ body{
      background-size: cover;
      object-fit: cover;
      overflow-y: hidden;
+     opacity: var(0.5rem);
 }
 
 btn {
@@ -31,7 +33,7 @@ btn {
     display: flex;
     justify-content: center;
     font-size: xx-large;
-
+    box-sizing: border-box;
 }
 
 #inOut {
@@ -40,6 +42,7 @@ btn {
     justify-content: center;
 }
 button{
+    color: white;
     background-color: #ff6900;
     margin: 3rem;
     font-size: x-large;
