@@ -1,0 +1,23 @@
+/* ****************** Reset Defaults ****************** */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ****************** Links ****************** */
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ****************** Buttons ****************** */
+.btn-primary{
+    background-color: orange;
+    color: #fff;
+}
+
+/* ****************** ul ****************** */
+li{
+   list-style: none;
+}
