@@ -25,7 +25,10 @@ a{
     color:white;
     font-size: 20px;
     padding: 8px;
-    margin-left: 40px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border: 1px solid #FA510F;
+    border-radius: 6px;
 }
 
 /* ****************** ul ****************** */
