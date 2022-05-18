@@ -1,5 +1,11 @@
 *{
-   background-color: rgb(59, 52, 52); 
+   font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif; 
+}
+body{
+    background-image: url("../images/bg-man.jpg");
+    background-size: cover;
+    opacity: 0.9;
+
 }
 @media screen and (max-width: 450px){
     input{
@@ -21,9 +27,6 @@
         padding:0.5rem;
         margin:2rem 0rem 2rem 2rem ;
     }
-    .option{
-        margin:;
-    }
     a{
         background-color: darkorange;
         color: black;
@@ -44,7 +47,7 @@
 @media screen and (min-width: 768px){
 input{
     background-color:silver;
-    margin:10% 30% 1% 30%;
+    margin:10% 30% 1% 30%; 
     padding: 1rem;
     color: black;
     border: none;
@@ -62,6 +65,8 @@ button{
 }
 .option{
     margin: 5% 0% 0% 30%;
+    /* display: flex;
+    justify-content: center; */
 }
 a{
     background-color: darkorange;
@@ -70,7 +75,7 @@ a{
 }
 #one{
     margin-left: 0rem;
-    margin-right: 4rem;
+    margin-right: 1rem;
 }
 #home{
     margin-left: 4rem;
@@ -97,6 +102,8 @@ a{
     }
     .option{
         margin: 5% 0% 0% 20%;
+        /* display: flex;
+        justify-content: center; */
     }
     a{
         background-color: darkorange;
