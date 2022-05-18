@@ -1,5 +1,7 @@
 const inputs = document.querySelectorAll(".input");
 
+const submitBtn = document.querySelector(".submit");
+
 const data = [
   {
     firstName: "",
@@ -8,6 +10,8 @@ const data = [
     group: "",
   },
 ];
+
+const errors = [];
 
 const errorMessage = ["Invalid name", "Invalid email", "Invalid serial number"];
 
@@ -42,6 +46,7 @@ inputs.forEach((input) => {
         input.classList.remove("border-success");
       }
       document.querySelector(".name-error").textContent = errorMessage[0];
+      errors.push(errorMessage[0]);
     }
 
     if (
@@ -55,6 +60,7 @@ inputs.forEach((input) => {
     } else {
       input.classList.add("border-warning");
       document.querySelector(".email-error").textContent = errorMessage[1];
+      errors.push(errorMessage[1]);
     }
 
     if (
@@ -66,8 +72,18 @@ inputs.forEach((input) => {
       input.classList.add("border-success");
     } else {
       input.classList.add("border-warning");
-      document.querySelectorAll(".first_name_error").textContent =
-        errorMessage[2];
+      document.querySelectorAll(".serial_error").textContent = errorMessage[2];
+      errors.push(errorMessage[2]);
     }
   });
+});
+
+submitBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (errors.length > 0) {
+    document.querySelector(".all-error-message").textContent =
+      "Kindly ensure you fill all the required input.";
+  }else{
+    console.log(data)
+  }
 });

@@ -1,5 +1,5 @@
 body{
-    background-image: url("/assets/images/bg-man.jpg");
+    background-image: url("../images/bg-man.jpg");
     background-size: cover;
     opacity: 0.8;
     
