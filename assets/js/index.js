@@ -28,12 +28,30 @@ const isValidSerialNumberFormat = (serialNumber) => {
 
 inputs.forEach((input) => {
   let value = input.value;
-  if (value && isValidNameFormat()) {
+  if (input.className.contains("name") && value && isValidNameFormat()) {
     data[0].firstName = value;
     input.classList.add("border-success");
   }
   else{
     input.classList.add("border-warning");
     document.querySelectorAll(".first_name_error").textContent = errorMessage[0];
+  }
+
+  if (input.className.contains("email") && value && isValidEmailFormat()) {
+    data[1].firstName = value;
+    input.classList.add("border-success");
+  }
+  else{
+    input.classList.add("border-warning");
+    document.querySelectorAll(".first_name_error").textContent = errorMessage[1];
+  }
+
+  if (input.className.contains("serial") && value && isValidSerialNumberFormat()) {
+    data[2].firstName = value;
+    input.classList.add("border-success");
+  }
+  else{
+    input.classList.add("border-warning");
+    document.querySelectorAll(".first_name_error").textContent = errorMessage[2];
   }
 });
