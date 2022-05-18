@@ -36,7 +36,7 @@ btn {
     font-size: xx-large;
     box-sizing: border-box;
 }
-#form{
+#inOut{
     margin-top: 100px;
     display: flex;
     justify-content: center;
