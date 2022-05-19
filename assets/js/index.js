@@ -104,7 +104,7 @@ inputs.forEach((input) => {
 
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  if (errors.length > 0 && Object.values(...data).length < 4) {
+  if (errors.length > 0 || Object.values(...data).length < 4) {
     document.querySelector(".all-error-message").textContent =
       "Kindly ensure you fill all the required input.";
     errors.length = 0;  
