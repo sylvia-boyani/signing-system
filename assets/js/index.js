@@ -7,17 +7,16 @@ const data = [
     firstName: "",
     lastName: "",
     email: "",
-    group: "",
+    laptopId: "",
+    // studentGroup: "",
   },
 ];
-
 const errors = [];
 
 const errorMessage = ["Invalid name", "Invalid email", "Invalid serial number"];
 
 const isValidEmailFormat = (email) => {
   let validEmail = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
-  console.log(validEmail);
   return validEmail.test(email) ? true : false;
 };
 
@@ -32,12 +31,29 @@ const isValidSerialNumberFormat = (serialNumber) => {
 };
 
 inputs.forEach((input) => {
-  input.addEventListener("blur", () => {
+  input.addEventListener("input", () => {
     let value = input.value;
-    if (input.classList.contains("name") && value && isValidNameFormat(value)) {
+    if (input.classList.contains("first-name") && value && isValidNameFormat(value)) {
       data[0].firstName = value;
       input.classList.add("border-success");
-      document.querySelector(".name-error").textContent = "";
+      document.querySelector(".first-name-error").textContent = "";     
+      errorMessage[0];
+    } else {
+      input.classList.add("border-warning");
+      if (input.classList.contains("border-success")) {
+        input.classList.remove("border-success");
+      }
+      document.querySelector(".first-name-error").textContent = errorMessage[0];
+      errors.push(errorMessage[0]);
+    }
+
+    if (
+      input.classList.contains("last-name") &&
+      value &&
+      isValidNameFormat(value)
+    ) {
+      data[0].lastName = value;
+      input.classList.add("border-success");
       document.querySelector(".last-name-error").textContent = "";
       errorMessage[0];
     } else {
@@ -45,7 +61,7 @@ inputs.forEach((input) => {
       if (input.classList.contains("border-success")) {
         input.classList.remove("border-success");
       }
-      document.querySelector(".name-error").textContent = errorMessage[0];
+      document.querySelector(".first-name-error").textContent = errorMessage[0];
       errors.push(errorMessage[0]);
     }
 
@@ -54,7 +70,7 @@ inputs.forEach((input) => {
       value &&
       isValidEmailFormat(value)
     ) {
-      data[0].firstName = value;
+      data[0].email = value;
       input.classList.add("border-success");
       document.querySelector(".email-error").textContent = "";
     } else {
@@ -68,7 +84,7 @@ inputs.forEach((input) => {
       value &&
       isValidSerialNumberFormat(value)
     ) {
-      data[0].firstName = value;
+      data[0].laptopId = value;
       input.classList.add("border-success");
       document.querySelectorAll(".serial_error").textContent = "";
     } else {
@@ -81,10 +97,30 @@ inputs.forEach((input) => {
 
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  if (errors.length > 0) {
-    document.querySelector(".all-error-message").textContent =
-      "Kindly ensure you fill all the required input.";
-  }else{
-    console.log(data)
-  }
+  // if (errors.length > 0) {
+  //   document.querySelector(".all-error-message").textContent =
+  //     "Kindly ensure you fill all the required input.";
+  // } else {
+  registerUser("http://localhost:8080/api/v1/students", data);
+  // }
 });
+
+const registerUser = async (url = "", data = {}) => {
+  console.log(data);
+  const response = await fetch(url, {
+    method: "POST",
+    mode: "cors",
+    cache: "no-cache",
+    credentials: "same-origin",
+
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(...data),
+  });
+  console.log(response.json());
+};
+// submitBtn.addEventListener("click", () => {
+
+//   console.log(data)
+// });
