@@ -100,6 +100,7 @@ inputs.forEach((input) => {
       }
     }
   });
+  value = "";
 });
 
 submitBtn.addEventListener("click", (e) => {
