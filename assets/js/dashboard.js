@@ -6,7 +6,8 @@ const getUsers = () => {
     .then((response) => response.json())
     .then((data) => {
       data.forEach((user) => {
-        tableBody.innerHTML += `<tr>      
+        tableBody.innerHTML += `<tr>  
+      <td><input type="checkbox" name="" id=""> </td>
            <td>${user.id}</td>
            <td>${user.firstName}</td>
            <td>${user.lastName}</td>
