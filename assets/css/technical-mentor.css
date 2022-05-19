@@ -11,7 +11,7 @@ body{
 .center{
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 input{
     background-color:silver;
@@ -21,6 +21,7 @@ input{
     border-radius: 6px;
     box-shadow: 2px 2px 5px grey;
     font-size: x-large;
+    object-position: 50% 50%;
 }
 button{
     background-color: #FA510F;
@@ -30,10 +31,12 @@ button{
     padding:1rem;
     color: white;
     margin-top: 3rem;
+    object-position: 50% 50%;
 }
 .option{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 #one{
     margin-right: 3rem;
