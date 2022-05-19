@@ -33,6 +33,7 @@ body {
   border: 0.2rem solid #5f0808;
   height: 4rem;
   width: 4rem;
+  overflow: hidden;
 }
 
 .right.avatar img {
@@ -43,11 +44,11 @@ body {
 .main {
   display: flex;
   justify-content: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   gap: 1.5rem;
   border-radius: 3rem;
-  width: 100%;
+  width: 100vw;
 }
 
 .circle {
@@ -61,13 +62,13 @@ body {
   justify-content: center;
   align-items: center;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-
+  /* background: linear-gradient(270deg, black 10%, transparent 50%), linear-gradient(0deg, black 50%, lightgray 50%) */
 }
 
 .main .left{
     background-color: aliceblue;
     height: 100%;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: row;
     justify-content: center;
@@ -78,8 +79,30 @@ body {
 
 table {
   background-color: #fff;
-  border-radius: 0.3rem;
+  border-radius: 0.3rem; 
 
+}
+
+
+table thead{
+position: sticky;
+top: 0;
+background-color: #5f0808;
+color: #fff;
+
+padding: 3.5rem 0;
+}
+
+table thead tr th{
+
+  padding: 0.5rem;
+  }
+.right{
+  overflow-y: auto;
+  overflow-x: hidden !important;
+  height: 50vh;
+  max-height: 70vh;
+ 
 }
 
 td {

@@ -1,29 +1,49 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../assets/css/student.css">
-        <title>Student page</title>
-    </head>
-    <body>
-        <div id="btn">
-            <button ><a href="../index.html">Home</a></button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/utilities.css" />
+    <link rel="stylesheet" href="../assets/css/student.css" />
+    <title>Student page</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="dash">
+        <div>
+          <img src="../assets/images/moringa logo.png" height="45px" />
         </div>
-        <div id="form">
-            <Form>
-                <label for="st-id">Student Id:</label>
-                <input type="text" id="st-id" name="st-id">
-            </Form>
-        </div>
-        <br>
-        <div id="inOut">
-            <button onclick="myFunction()">Check In</button>
-            <button onclick="myFunction2()">Check Out</button>
-        </div>
+        <ul>
+          <li class="btn-primary">
+            <a href="../pages/student.html"> Student </a>
+          </li>
+          <li class="btn-primary">
+            <a href="../pages/technical-mentor.html"> Technical Mentor </a>
+          </li>
+          <li class="btn-primary">
+            <a href="../pages/dashboard.html"> Dashboard </a>
+          </li>
+        </ul>
+      </nav>
 
-        <script type="text/javascript" src="../assets/js/student.js"></script>
-    </body>
-
+      <div class="mid">
+        <form class="center" action="technical-mentor.html">
+          <input
+            type="text"
+            placeholder="Enter Student ID"
+            required
+            minlength="9"
+            maxlength="9"
+            class="student-id"
+          />
+        </form>
+        <div class="option">
+          <button class="controls">Check In</button>
+          <button class="controls">Check Out</button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="../assets/js/student.js"></script>
+  </body>
 </html>

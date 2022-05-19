@@ -1,57 +1,52 @@
-/*#btn{
-    float:inline-end;
-    justify-content: center;
-    align-items: center;
-    font-size: large;
-    flex-direction: column;
+body {
+  color: white;
+  height: 100vh;
+  background-image: url(../images/bg-man.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  overflow-y: hidden;
+}
 
-}*/
 
-body{
-    color: white;
+#inOut {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  color: white;
+  background-color: #ff6900;
+  margin: 3rem;
+  font-size: x-large;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 2px 5px black;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.mid{
     height: 100vh;
-    background-image: url(../images/bg-man.jpg);
-     background-repeat: no-repeat;
-     background-position: center;
-     background-size: cover;
-     object-fit: cover;
-     overflow-y: hidden;
-     opacity: var(0.5rem);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   align-items: center;
 }
 
-btn {
-    border: 1px solid red;
-    margin: 3rem 70rem 3rem 3rem;
+input{
+    background-color:silver;
     padding: 1rem;
-    background-color: #ff6900;
-}
- 
-#btn, a{
-    text-decoration: none;
-}
-
-#form {
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    font-size: xx-large;
-    box-sizing: border-box;
-}
-#inOut{
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-}
-
-button{
-    color: white;
-    background-color: #ff6900;
-    margin: 3rem;
-    font-size: x-large;
-    padding: 0.5rem;
-    border-radius: 5px;
+    color: black;
     border: none;
-    box-shadow: 2px 2px 5px black;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px grey;
+    font-size: x-large;
+    object-position: 50% 50%;
 }
-
-
