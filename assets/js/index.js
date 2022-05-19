@@ -110,7 +110,7 @@ submitBtn.addEventListener("click", (e) => {
     errors.length = 0;  
   } else {
     document.querySelector(".all-error-message").textContent = "";
-    registerUser("http://localhost:8080/api/v1/students", data);
+    registerUser("https://signing-system.herokuapp.com/api/v1/students", data);
     document.querySelector("form").reset();
   }
 });

@@ -8,7 +8,7 @@ const isValidId = (id) => {
 };
 
 const checkinStudent = (id) => {
-  fetch(`http://localhost:8080/api/v1/students/${id}`)
+  fetch(`https://signing-system.herokuapp.com/api/v1/students/${id}`)
     .then((response) => response.json())
     .then((data) => {
       location.href = `../pages/success.html?name=${data.lastName}`;
