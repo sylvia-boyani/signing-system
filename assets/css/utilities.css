@@ -5,13 +5,13 @@
   box-sizing: border-box;
 }
 
-nav{
-    display: flex;
-    justify-content: space-around;
+nav {
+  display: flex;
+  justify-content: space-around;
 }
 
-.btn-primary{
-    width: 15vw;   
+.btn-primary {
+  width: 15vw;
 }
 
 nav .dash {
@@ -27,12 +27,12 @@ nav ul {
   gap: 3rem;
 }
 
-nav ul li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-  }
+nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
 
 nav img {
   width: 5rem;
@@ -62,7 +62,10 @@ a {
 }
 
 .name-error,
-.last-name-error {
+.last-name-error,
+.first-name-error,
+.email-error,
+.all-error-message {
   color: #fa510f;
 }
 
@@ -71,15 +74,14 @@ li {
   list-style: none;
 }
 
-input{
-    border-radius: 0.5rem;
-    outline: none;
+input {
+  border-radius: 0.5rem;
+  outline: none;
+  border: 0.2rem solid rgba(16, 31, 60, 0.5) !important;
 }
 
-
-
 .wrapper {
-    background-color: rgba(16, 31, 60, 0.5);
-    height: 100vh;
-    padding: 1rem 0;
-  }
+  background-color: rgba(16, 31, 60, 0.5);
+  height: 100vh;
+  padding: 1rem 0;
+}
