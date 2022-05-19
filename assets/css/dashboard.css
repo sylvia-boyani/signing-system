@@ -44,10 +44,11 @@ body {
 .main {
   display: flex;
   justify-content: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   gap: 1.5rem;
   border-radius: 3rem;
+  
 }
 
 .circle {
@@ -97,9 +98,11 @@ table thead tr th{
   padding: 0.5rem;
   }
 .right{
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden !important;
-  height: 70vh;
+  height: 50vh;
+  max-height: 70vh;
+ 
 }
 
 td {
