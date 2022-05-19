@@ -18,7 +18,7 @@ const getUsers = () => {
            <td>
              <div class="actions">
                <button class="view">View</button>
-               <button class="edit">Edit</button>
+               <button class="edit">Delete</button>
              </div>
            </td>        
        </tr>`;       
