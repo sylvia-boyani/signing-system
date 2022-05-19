@@ -48,7 +48,8 @@ body {
   align-items: center;
   gap: 1.5rem;
   border-radius: 3rem;
-  width: 95vw;
+  width: 100vw;
+  padding: 0 1rem;
 }
 
 .circle {
