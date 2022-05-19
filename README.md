@@ -56,6 +56,7 @@ The projects runs on any browser. The repository is a public one so anyone can a
 There are no hardware requirements really, just a computer or phone with internet connectivity 
 and the quiz website can be accessed. 
 Here is the link to the website, https://sylvia-boyani.github.io/signing-system
+Here is the link to the project presentation https://docs.google.com/presentation/d/1nbLS9v-Elx_yuP_rADYs6uIVAGnnEbgZ0y7TfflAqjs/edit?usp=sharing 
 
 Licence
 
