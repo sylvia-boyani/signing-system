@@ -26,23 +26,22 @@
           </li>
         </ul>
       </nav>
-      <!-- <div id="form"> -->
-        <form>
-          <div class="form-group">
-            <label for="st-id"></label>
-            <input
-              type="text"
-              id="st-id"
-              name="st-id"
-              placeholder="Enter Student ID"
-            />
-          </div>
-          <div id="inOut" class="form-group">
-            <button onclick="myFunction()">Check In</button>
-            <button onclick="myFunction2()">Check Out</button>
-          </div>
+
+      <div class="mid">
+        <form class="center" action="technical-mentor.html">
+          <input
+            type="text"
+            placeholder="ENTER TM-NUMBER"
+            required
+            minlength="9"
+            maxlength="9"
+          />
         </form>
-      <!-- </div> -->
+        <div class="option">
+          <button onclick="myFunction()">Check In</button>
+          <button onclick="myFunction2()">Check Out</button>
+        </div>
+      </div>
     </div>
     <script type="text/javascript" src="../assets/js/student.js"></script>
   </body>
