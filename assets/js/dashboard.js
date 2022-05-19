@@ -2,7 +2,7 @@ const tableBody = document.querySelector(".tableBody");
 const getUsers = () => {
 //   let tableRow = document.createElement("tr");
   console.log(tableBody)
-  fetch("http://localhost:8080/api/v1/students")
+  fetch(" https://signing-system.herokuapp.com/api/v1/students")
     .then((response) => response.json())
     .then((data) => {
       data.forEach((user) => {
