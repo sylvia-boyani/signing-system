@@ -15,35 +15,32 @@ body{
 }
 input{
     background-color:silver;
-    padding: 1rem;
+    padding: 0.5rem;
     color: black;
     border: none;
     border-radius: 6px;
     box-shadow: 2px 2px 5px grey;
-    font-size: x-large;
+    font-size: 15px;
     object-position: 50% 50%;
 }
-button{
-    background-color: #FA510F;
-    border-radius: 6px;
-    box-shadow: 2px 2px 3px #FA510F;
-    border: none;
-    padding:1rem;
+button {
     color: white;
-    margin-top: 3rem;
-    object-position: 50% 50%;
-}
+    background-color: #ff6900;
+    margin: 3rem;
+    font-size: x-large;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 5px black;
+  }
+
 .option{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#one{
-    margin-right: 3rem;
-}
-#two{
-    margin-left: 3rem;
-}
+
+   
 
 .mid{
     height: 100vh;
