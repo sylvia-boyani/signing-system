@@ -17,8 +17,8 @@ const getUsers = () => {
            <td>${user.id}</td>
            <td>
              <div class="actions">
-               <button class="view">View</button>
-               <button class="edit">Delete</button>
+             <button class="delete">Delete</button>
+               <button class="view">View</button>              
              </div>
            </td>        
        </tr>`;       
