@@ -1,27 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/utilities.css">
-    <link rel="stylesheet" href="/assets/css/technical-mentor.css">
-    <title>Technical Mentor.</title>
-</head>
-<body>
-    <div>
-        
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/utilities.css" />
+    <link rel="stylesheet" href="../assets/css/technical-mentor.css" />
+    <title>Technical Mentor</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="dash">
+        <div>
+          <img src="../assets/images/moringa logo.png" height="45px" />
+        </div>
+
+        <ul>
+          <li class="btn-primary">
+            <a href="./pages/student.html"> Student </a>
+          </li>
+          <li class="btn-primary">
+            <a href="./pages/technical-mentor.html"> Technical Mentor </a>
+          </li>
+          <li class="btn-primary">
+            <a href="./pages/dashboard.html"> Dashboard </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mid">
+        <form class="center" action="technical-mentor.html">
+          <input
+            type="text"
+            placeholder="ENTER TM-NUMBER"
+            required
+            minlength="9"
+            maxlength="9"
+          />
+        </form>
+        <div class="option">
+          <button id="one">CHECK-IN</button>
+          <button id="two">CHECK-OUT</button>
+        </div>
+      </div>
     </div>
-  <div class="mid">
-    <form class="center" action="technical-mentor.html">
-        <input type="text" placeholder="ENTER TM-NUMBER" required minlength="9" maxlength="9" >
-    </form>
-    <div class="option">
-        <button id="one">CHECK-IN</button>
-        <button id="two">CHECK-OUT</button>
-    </div>
-  </div>
-    
-    
-</body>
+  </body>
 </html>
