@@ -6,6 +6,7 @@ body{
     background-size: cover;
     opacity: 0.9;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 .center{
     display: flex;
@@ -39,4 +40,12 @@ button{
 }
 #two{
     margin-left: 3rem;
+}
+
+.mid{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   align-items: center;
 }
