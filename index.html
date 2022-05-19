@@ -5,79 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Roll call attendance</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/index.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/utilities.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/index.css" />
   </head>
 
   <body>
-    <nav>
-      <div class="dash">
-        <img src="./assets/images/moringa logo.png" />
+    <div class="wrapper">
+      <nav class="dash">
+        <div>
+          <img src="./assets/images/moringa logo.png" height="45px" />
+        </div>
+
         <ul>
-          <li><a href="#"> Student </a></li>
-          <li><a href="#"> TM sign </a></li>
-          <li><a href="#"> Dashboard </a></li>
+          <li class="btn-primary">
+            <a href="./pages/student.html"> Student </a>
+          </li>
+          <li class="btn-primary">
+            <a href="./pages/technical-mentor.html"> Technical Mentor </a>
+          </li>
+          <li class="btn-primary">
+            <a href="./pages/dashboard.html"> Dashboard </a>
+          </li>
         </ul>
-      </div>
-    </nav>
-    <div class="dash1">
-      <div class="container">
-        <h1>
-          Signing In/Out<br />
-          Made Easier
-        </h1>
-        <p>Sign with a Single Click</p>
-      </div>
-      <div class="dash2">
-        <form>
-          <input
-            class="input name"
-            type="text"
-            name="first_name"
-            placeholder="First Name"
-          />
-          <small class="name-error"></small>
-          <br />
-          <input
-            class="input  name"
-            type="text"
-            name="last_name"
-            placeholder="Last Name"
-          />
-          <small class="name-error"></small>
-          <br />
-          <input
-            class="input email"
-            type="email"
-            name="email"
-            placeholder="Email Address"
-          />
-          <small class="email"></small>
-          <br />
-          <input
-            class="input serial"
-            type="text"
-            name="lap_serial"
-            placeholder="Laptop S/NO"
-          />
-          <small class="serial"></small>
-          <br />
-          <label for="groups"> Select Group </label>
-          <select name="groups" id="group">
-            <option value="Not applicable">Not applicable</option>
-            <option value="Access Team">Access Team</option>
-            <option value="Admission Team ">Admissions team</option>
-            <option value="Marketing Team">Marketing Team</option>
-            <option value="MPFT/MC 50/51 Hybrid">MPFT/MC 50/51 Hybrid</option>
-            <option value="MPP25">MPP25</option>
-            <option value="DS12">DS12</option>
-          </select>
-          <br />
-          <button class="btn-primary">Register</button>
-        </form>
+      </nav>
+      <div class="dash1">
+        <div class="container">
+          <div class="inner-container">
+            <h1>Signing In/Out Made Easier</h1>
+            <p>Sigin with a Single Click</p>
+          </div>
+        </div>
+        <div class="dash2">
+          <small class="all-error-message"></small>
+          <form>
+            <div class="form-group">
+              <input
+                class="input name"
+                type="text"
+                name="first_name"
+                value=""
+                placeholder="First Name"
+              />
+              <small class="name-error"></small>
+            </div>
+            <div class="form-group">
+              <input
+                class="input name"
+                type="text"
+                name="last_name"
+                value=""
+                placeholder="Last Name"
+              />
+              <small class="last-name-error"></small>
+            </div>
+            <div class="form-group">
+              <input
+                class="input email"
+                type="email"
+                name="email"
+                value=""
+                placeholder="Email Address"
+              />
+              <small class="email-error"></small>
+            </div>
+            <div class="form-group">
+              <input
+                class="input serial"
+                type="text"
+                name="lap_serial"
+                value=""
+                placeholder="Laptop S/NO"
+              />
+              <small class="serial"></small>
+            </div>
+            <div class="form-group last">
+              <select name="groups" id="group" class="btn-secondary">
+                <option  value="Select Group"  disabled selected>Select Group</option>
+                <option value="Not applicable">Not applicable</option>
+                <option value="Access Team">Access Team</option>
+                <option value="Admission Team ">Admissions team</option>
+                <option value="Marketing Team">Marketing Team</option>
+                <option value="MPFT/MC 50/51 Hybrid">
+                  MPFT/MC 50/51 Hybrid
+                </option>
+                <option value="MPP25">MPP25</option>
+                <option value="DS12">DS12</option>
+              </select>
+              <button class="btn-primary submit btn-secondary" type="submit">Register</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
     <script src="./assets/js/index.js"></script>
   </body>
 </html>
-

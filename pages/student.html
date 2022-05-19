@@ -1,29 +1,49 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../assets/css/student.css">
-        <title>Student page</title>
-    </head>
-    <body>
-        <div id="btn">
-            <button onclick="document.location=''">Home</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/utilities.css" />
+    <link rel="stylesheet" href="../assets/css/student.css" />
+    <title>Student page</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="dash">
+        <div>
+          <img src="../assets/images/moringa logo.png" height="45px" />
         </div>
-        <div id="form">
-            <Form>
-                <label for="st-id">Student Id:</label>
-                <input type="text" id="st-id" name="st-id">
-            </Form>
-        </div>
-        <br>
-        <div id="inOut">
-            <button>Check In</button>
-            <button>Check Out</button>
-        </div>
-
-        <script type="text/javascript" src="../assets/js/student.js"></script>
-    </body>
-
+        <ul>
+          <li class="btn-primary">
+            <a href="../pages/student.html"> Student </a>
+          </li>
+          <li class="btn-primary">
+            <a href="../pages/technical-mentor.html"> Technical Mentor </a>
+          </li>
+          <li class="btn-primary">
+            <a href="../pages/dashboard.html"> Dashboard </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- <div id="form"> -->
+        <form>
+          <div class="form-group">
+            <label for="st-id"></label>
+            <input
+              type="text"
+              id="st-id"
+              name="st-id"
+              placeholder="Enter Student ID"
+            />
+          </div>
+          <div id="inOut" class="form-group">
+            <button onclick="myFunction()">Check In</button>
+            <button onclick="myFunction2()">Check Out</button>
+          </div>
+        </form>
+      <!-- </div> -->
+    </div>
+    <script type="text/javascript" src="../assets/js/student.js"></script>
+  </body>
 </html>
