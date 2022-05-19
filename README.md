@@ -41,7 +41,7 @@ As a user of the application,you will be able to :
   ### live link sylvia-boyani.github.io/signing-system/
 
   ### figma link https://www.figma.com/file/5pqqd9dSajdZBcDhwqDT2K/Signing-In-System?node-id=6%3A86
-  
+ ### slides link  https://docs.google.com/presentation/d/1nbLS9v-Elx_yuP_rADYs6uIVAGnnEbgZ0y7TfflAqjs/edit?usp=sharing
   ### Technology used
   * HTML - which was used to develope the structure off the pages.
 * CSS - which was used to style the User Interface.
