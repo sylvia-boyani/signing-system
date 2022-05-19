@@ -5,53 +5,15 @@ body{
     background-image: url("../images/bg-man.jpg");
     background-size: cover;
     opacity: 0.9;
+    background-repeat: no-repeat;
 }
-button:hover{
-    font-size: x-large;
-    background-color: #FA510F;
+.center{
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
-@media screen and (max-width: 450px){
-    input{
-        background-color:silver;
-        margin:1rem;
-        padding: 0.5rem;
-        color: black;
-        border: none;
-        border-radius: 6px;
-        box-shadow: 2px 2px 5px grey;
-        font-size:large;
-        width: 70%;
-    }
-    button{
-        background-color: #FA510F;
-        border-radius: 6px;
-        box-shadow: 2px 2px 3px #FA510F;
-        border: none;
-        padding:0.5rem;
-        margin:2rem 0rem 2rem 2rem ;
-        color: white;
-    }
-    a{
-        background-color: #FA510F;
-        color: white;
-        text-decoration: none; 
-    }
-    #one{
-        margin-left: 1rem;
-        margin-right: 3rem;
-    }
-    #two{
-        margin-left: 1rem;
-        margin-right: 4rem;
-    }
-    #home{
-        margin-left: 2rem;
-    }
-}
-@media screen and (min-width: 768px){
 input{
     background-color:silver;
-    margin:10% 30% 1% 30%; 
     padding: 1rem;
     color: black;
     border: none;
@@ -65,67 +27,16 @@ button{
     box-shadow: 2px 2px 3px #FA510F;
     border: none;
     padding:1rem;
-    margin:2rem 0rem 2rem 4rem ;
     color: white;
+    margin-top: 3rem;
 }
 .option{
-    margin: 5% 0% 0% 30%;
-    /* display: flex;
-    justify-content: center; */
-}
-a{
-    background-color: #FA510F;
-    color: black;
-    text-decoration: none;
-    color: white;
+    display: flex;
+    justify-content: center;
 }
 #one{
-    margin-left: 0rem;
-    margin-right: 1rem;
+    margin-right: 3rem;
 }
-#home{
-    margin-left: 4rem;
-}
-}
-@media screen and (min-width: 451px) and (max-width: 767px){
-    input{
-        background-color:silver;
-        margin:10% 30% 1% 20%;
-        padding: 1rem;
-        color: black;
-        border: none;
-        border-radius: 6px;
-        box-shadow: 2px 2px 5px grey;
-        font-size: x-large;
-    }
-    button{
-        background-color: #FA510F;
-        border-radius: 6px;
-        box-shadow: 2px 2px 3px #FA510F;
-        border: none;
-        padding:1rem;
-        margin:2rem 0rem 2rem 4rem ;
-        color: white;
-    }
-    .option{
-        margin: 5% 0% 0% 20%;
-        /* display: flex;
-        justify-content: center; */
-    }
-    a{
-        background-color: #FA510F;
-        color: black;
-        text-decoration: none;
-        color: white;
-    }
-    #one{
-        margin-left: 0rem;
-        margin-right: 4rem;
-    }
-    #two{
-        margin-left: 2rem;
-    }
-    #home{
-        margin-left: 4rem;
-    }
+#two{
+    margin-left: 3rem;
 }
