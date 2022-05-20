@@ -18,7 +18,7 @@ body {
 
 button {
   color: white;
-  background-color: #ff6900;
+  background-color: #fa510f;
   margin: 3rem;
   font-size: x-large;
   padding: 0.5rem;
@@ -42,7 +42,7 @@ form {
 
 input{
     background-color:silver;
-    padding: 1rem;
+    padding: 1.2rem;
     color: black;
     border: none;
     border-radius: 6px;
