@@ -15,12 +15,12 @@ body{
 }
 input{
     background-color:silver;
-    padding: 0.5rem;
+    padding: 1rem;
     color: black;
     border: none;
     border-radius: 6px;
     box-shadow: 2px 2px 5px grey;
-    font-size: 15px;
+    font-size: x-large;
     object-position: 50% 50%;
 }
 button {
