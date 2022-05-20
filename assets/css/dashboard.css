@@ -123,10 +123,10 @@ tr:nth-child(even) {
   color: #fff;
 }
 
-.actions button.edit {
+.actions button.view {
   background-color: green;
 }
 
-.actions button.view {
+.actions button.delete {
   background-color: #5f0808;
 }
