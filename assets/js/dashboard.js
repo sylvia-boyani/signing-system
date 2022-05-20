@@ -1,8 +1,7 @@
-const actions = document.querySelector(".actions");
 const tableBody = document.querySelector(".tableBody");
 const getUsers = () => {
-//   let tableRow = document.createElement("tr");
-  console.log(tableBody)
+  //   let tableRow = document.createElement("tr");
+  console.log(tableBody);
   fetch("https://signing-system.herokuapp.com/api/v1/students")
     .then((response) => response.json())
     .then((data) => {
@@ -18,23 +17,26 @@ const getUsers = () => {
            <td>${user.id}</td>
            <td>
              <div class="actions">
-             <button data="${user.id}" class="delete actions">Delete</button>
+             <button ${onClick(user.id)} class="delete actions">Delete</button>
                <button class="view actions">View</button>              
              </div>
            </td>        
-       </tr>`;       
+       </tr>`;
       });
     });
 };
 
-
-actions.forEach(action => {
-  action.addEventListener("click", (e)=>{
-    id = parseInt(e.target.data);
-      deleteStudent(`https://signing-system.herokuapp.com/api/v1/students/${id}`)
-  })
-});
-
+const onClick = (id) => {
+  const actions = document.querySelector(".actions");
+  actions.forEach((action) => {
+    action.addEventListener("click", (e) => {
+      id = parseInt(e.target.data);
+      deleteStudent(
+        `https://signing-system.herokuapp.com/api/v1/students/${id}`
+      );
+    });
+  });
+};
 
 const deleteStudent = async (url = "") => {
   console.log(id);
@@ -51,5 +53,3 @@ const deleteStudent = async (url = "") => {
   console.log(response);
 };
 getUsers();
-
-
