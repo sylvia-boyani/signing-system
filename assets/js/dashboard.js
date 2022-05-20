@@ -1,10 +1,14 @@
 const tableBody = document.querySelector(".tableBody");
+
+const percent = document.querySelector(".attendance-percentage")
+
 const getUsers = () => {
   //   let tableRow = document.createElement("tr");
   console.log(tableBody);
   fetch("https://signing-system.herokuapp.com/api/v1/students")
     .then((response) => response.json())
     .then((data) => {
+      getPercentPresent(data.length)
       data.forEach((user) => {
         tableBody.innerHTML += `<tr>  
       <td><input type="checkbox" name="" id=""> </td>
@@ -51,4 +55,10 @@ const deleteStudent = async (url = "") => {
   });
   console.log(response);
 };
+
+const getPercentPresent = (percent) => {
+  let percentage = (percent/130)*100
+  percent.textContent = `${percentage}%`
+}
+
 getUsers();
