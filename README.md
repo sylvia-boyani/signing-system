@@ -1,39 +1,20 @@
 # signing system
+ ## by sylvia boyani
+## Screenshot
 
-## by sylvia boyani
-
-## Landing Page
-
-![image](./assets/images/home-page.png)
-
-## Student Page
-
-![image](./assets/images/student-page.png)
-
-## Technical Mentor Page
-
-![image](./assets/images/technical-mentor-page.png)
-
-## Dashboard Page
-
-![image](./assets/images/dashboard-page.png)
-
-## Table of Content
-
-- [Description](#description)
-- [Features](#features)
-- [Behaviour Driven Development](#Behaviour-Driven-Development)
-- [Requirements](#requirements)
-- [Installation Process](#installation-Process)
-- [Live Link](#Live-Link)
-- [figma Link] (#Figma-Link)
-- [Technology  Used](#technology-Used)
-- [Licence](#licence)
-- [Authors Info](#Authors-Info) -
-
-## Description
-
-  <p>This project is a web application is used to check in and out students and technical mentors at moringa school.
+ ## Table of Content
+ - [Description](#description)
+ - [Features](#features)
+ - [Behaviour Driven Development](#Behaviour-Driven-Development)
+ - [Requirements](#requirements)
+ - [Installation Process](#installation-Process)
+ - [Live Link](#Live-Link)
+ - [figma Link] (#Figma-Link)
+ - [Technology  Used](#technology-Used)
+ - [Licence](#licence)
+ - [Authors Info](#Authors-Info)
+ ## Description
+ <p>This project is a web application is used to check in and out students and technical mentors at moringa school.
 [Go Back to the top](#signing system)
 ## Features
 As a user of the application,you will be able to :
@@ -41,43 +22,32 @@ As a user of the application,you will be able to :
 1. See data of students and technical mentors
   
 [Go Back to the top](#signing system)
-
 ## Behaviour Driven Development|
-
-| Behaviour                       |          Input           | Output |
-| :------------------------------ | :----------------------: | -----: |
-| Enter your first name           |          sylvia          |        |
-| Enter your last name            |          boyani          |        |
-| Enter your Email Address        | phinicnyangate@gmail.com |        |
-| Enter your laptop serial number |        pc-047T66         |        |
-| Press Submit                    |                          |        |
+| Behaviour      | Input        | Output       |
+| :------------- | :----------: | -----------: |
+|  Enter your first name  |   sylvia |     |
+  |Enter your last name | boyani |   |
+| Enter your Email Address  | phinicnyangate@gmail.com |   |
+| Enter your laptop serial number  |  pc-047T66    |     |
+| Press Submit|     |  |
 [Go Back to the top](#signing system)
+ ###  Requirements
+ * Access to  a computer or any other garget
+ * Access to internet
+ ### Installation Process
+ * Clone to thir repo : git clone https://github.com/sylvia-boyani/signing-system.git
+* Unzip the downloaded files in a folder of choice.
+* Open the index file from the zipped file with any browser.
+  ### live link sylvia-boyani.github.io/signing-system/
 
-### Requirements
+  ### figma link https://www.figma.com/file/5pqqd9dSajdZBcDhwqDT2K/Signing-In-System?node-id=6%3A86
+ ### slides link  https://docs.google.com/presentation/d/1nbLS9v-Elx_yuP_rADYs6uIVAGnnEbgZ0y7TfflAqjs/edit?usp=sharing
+  ### Technology used
+  * HTML - which was used to develope the structure off the pages.
+* CSS - which was used to style the User Interface.
+*  JS - Used in validating data
 
-- Access to  a computer or any other garget
-- Access to internet
-
-### Installation Process
-
-- Clone to thir repo : git clone <https://github.com/sylvia-boyani/signing-system.git>
-- Unzip the downloaded files in a folder of choice.
-- Open the index file from the zipped file with any browser.
-
-### live link sylvia-boyani.github.io/signing-system/
-
-### figma link <https://www.figma.com/file/5pqqd9dSajdZBcDhwqDT2K/Signing-In-System?node-id=6%3A86>
-
-### slides link  <https://docs.google.com/presentation/d/1nbLS9v-Elx_yuP_rADYs6uIVAGnnEbgZ0y7TfflAqjs/edit?usp=sharing>
-
-### Technology used
-
-- HTML - which was used to develope the structure off the pages.
-- CSS - which was used to style the User Interface.
-- JS - Used in validating data
-
-### License
-
+  ### License
  Copyright (c) [2022] [sylvia boyani]
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -95,10 +65,5 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 [Go Back to the top](#signing system)
-
-### Authors' info
-
-Feel free to reach out via:
-
-- StackOverflow Profile - [Tiberius Mairura](https://stackoverflow.com/users/11869442/tiberius)
-- Linked - [Tiberius Mairura](https://www.linkedin.com/in/tiberius-mairura/)
+  ### Authors info 
+  
