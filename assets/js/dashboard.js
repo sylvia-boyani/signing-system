@@ -17,7 +17,7 @@ const getUsers = () => {
            <td>${user.id}</td>
            <td>
              <div class="actions">
-             <button ${onClick(user.id)} class="delete actions">Delete</button>
+             <button ${onClick = handleClick(user.id)} class="delete actions">Delete</button>
                <button class="view actions">View</button>              
              </div>
            </td>        
@@ -26,11 +26,10 @@ const getUsers = () => {
     });
 };
 
-const onClick = (id) => {
+const handleClick = (id) => {
   const actions = document.querySelector(".actions");
   actions.forEach((action) => {
-    action.addEventListener("click", (e) => {
-      id = parseInt(e.target.data);
+    action.addEventListener("click", (e) => {   
       deleteStudent(
         `https://signing-system.herokuapp.com/api/v1/students/${id}`
       );
