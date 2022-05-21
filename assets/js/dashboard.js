@@ -22,7 +22,7 @@ const getUsers = () => {
            <td>${user.id}</td>
            <td>
              <div class="actions">
-             <button onClick=${handleClick(user.id)} class="delete actions">Delete</button>
+             <button onClick=handleClick(${user.id}) class="delete actions">Delete</button>
                <button class="view actions">View</button>              
              </div>
            </td>        
