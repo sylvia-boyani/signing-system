@@ -1,3 +1,4 @@
+window.onload = () => {
 const tableBody = document.querySelector(".tableBody");
 
 const percent = document.querySelector(".attendance-percentage")
@@ -21,7 +22,7 @@ const getUsers = () => {
            <td>${user.id}</td>
            <td>
              <div class="actions">
-             <button  class="delete actions">Delete</button>
+             <button onClick=${handleClick(user.id)} class="delete actions">Delete</button>
                <button class="view actions">View</button>              
              </div>
            </td>        
@@ -62,3 +63,4 @@ const getPercentPresent = (percent) => {
 }
 
 getUsers();
+}
